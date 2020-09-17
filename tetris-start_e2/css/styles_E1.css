@@ -1,0 +1,30 @@
+/* Do everything in this file */
+h2{
+    border-bottom: solid red;
+    clear: right;
+}
+figure{
+    max-width: 650px; /*this ensures the figure will never be larger than 650 pixels in width*/
+    float: right;
+    margin-left: 3rem;
+}
+figure img{ /*this is an example of a descendant selector (we are selecting the child property of image that is inside figure*/
+    width: 100%;
+    overflow: hidden;
+}
+div{
+    border-bottom: 1px solid red;
+    clear: both;
+}
+div img{
+    width: 5rem;
+    float: right;
+
+}
+footer{
+    clear: both;
+    position: fixed;
+    top: 30px;
+    right:60px;
+    z-index: -3;
+}
