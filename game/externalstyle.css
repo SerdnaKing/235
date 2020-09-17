@@ -1,0 +1,73 @@
+h1 {
+    color: red;
+
+    border-bottom: 1px solid blue;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 110%;
+}
+
+h2 {
+    background-color: #264653;
+    color: sandybrown;
+    font-family: sans-serif;
+    text-align: center;
+}
+blockquote {
+    background-color: lightgray;
+    padding: 1rem;
+}
+
+body {
+    
+    background-color: #264653;
+    font-family: 'Open Sans', 'Arial'sans-serif;
+
+}
+main, header, footer{
+    background-color: mintcream;
+    padding: 2rem;
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 75vw;
+}
+
+p {
+    margin-left: 2.5rem;
+}
+
+img.side {
+    float: right;
+    margin: 0 12px;
+}
+
+img {
+    border-style: ridge;
+}
+
+ul {
+    background-color: #2a9d8f;
+    color: mintcream;
+}
+
+a:link {
+    color: #264653;
+}
+
+a:visited {
+    color: sandybrown;
+}
+
+a:focus {
+    color: #e76f51;
+    background-color: #264653;
+}
+
+a:hover {
+    color: #e76f51;
+    background-color: #264653;
+}
+
+a:active {
+    color: sandybrown;
+    background-color: #2a9d8f;
+}

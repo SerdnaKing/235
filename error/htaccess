@@ -1,0 +1,3 @@
+ErrorDocument 404 / lga7192/235/error/error.html
+
+DirectoryIndex noterror.html

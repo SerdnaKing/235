@@ -1,0 +1,39 @@
+/* Do everything in this file */
+h2,h3,h4,h5,h6{
+    border-bottom: solid red;
+    clear: right;
+}
+figure{
+    max-width: 650px; /*this ensures the figure will never be larger than 650 pixels in width*/
+    margin: 0 auto;
+}
+figure > img{ /*this is an example of a descendant selector (we are selecting the child property of image that is inside figure*/
+    width: 100%;
+    /* overflow: hidden; */
+}
+header, main, footer{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+#tetlist{
+    display: flex;
+    flex-flow: row wrap;
+}
+.tet{
+    margin: 5px;
+    flex: 0 1 200px;
+    border: 1px solid black;
+}
+.tet > img{
+    padding: .5em;
+    max-width: 75%;
+    
+}
+.name{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.aliases{
+    padding: 5px 0;
+}
