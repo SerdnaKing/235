@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Web Apps-6</title>
+	<style>
+		body{
+			font-family:sans-serif;
+		}
+		#colorform{
+			background-color:#dfecdf;
+			color: #111;
+			padding:1em;width:400px;
+		}
+		#colorform p#info{
+			background-color:white;
+			color: black;
+			width:300px;
+			height:100px;
+			padding:.5em;
+		}
+		
+		#colorform legend{ 
+			font-weight:bold;
+			font-size:1.2em;
+		}
+	</style>
+</head>
+<body>
+
+<div id="colorform">
+	<legend>Choose your favorite color!</legend>
+	<p><input type="radio" name="colorGroup" id="colorGroupRed" value="red" /> Red</p>
+	<p><input type="radio" name="colorGroup" id="colorGroupGreen" value="green" /> Green</p>
+	<p><input type="radio" name="colorGroup" id="colorGroupBlue" value="blue" /> Blue</p>
+	<p><button id="colorButton" type="button">Submit</button></p>
+	<p id="info"></p>
+</div>
+
+<script>
+/* Write your code here! */
+
+function clickedRadioButton(event){
+   let color = event.target.value; 
+   document.querySelector('#info').innerHTML = 
+   'You have selected "'  + color + '"!' //I really didn't get the quotation
+   //trick until Prof. Bast showed it in the demo!
+}
+let radioButtons = document.querySelectorAll("input[name='colorGroup']");
+for (let radioButton of radioButtons){
+    radioButton.addEventListener("click", clickedRadioButton);
+} 
+function clickSubmission(){
+// console.log("submit clicked"); this is a good way to check if the code is 
+//being read by the computer, specifically the function.
+//document.querySelector("legend").style.color = "purple"; my way didn't work :(
+let header = document.querySelector("legend");
+let selectedColor = "orange";
+for(let radioButton of radioButtons){
+    if(radioButton.checked){
+        selectedColor = radioButton.value;
+        document.querySelector('#info').innerHTML = 
+   'Your FINAL CHOICE is "'  + selectedColor + '"!'
+        break;
+    }
+
+}
+header.style.color = selectedColor;
+}
+
+document.querySelector("#colorButton").onclick = clickSubmission;
+</script>
+</body>
+</html>
