@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel = "stylesheet" href="styles/styles.css">
+	<title>Random Phrases</title>
+
+</head>
+<body onload="changedQuote(quotes)">
+    <h1>J.R.R Tolkein Quotables!</h1>
+
+<div id="quoteSwitch">
+    <button class="classname" onclick="changedQuote(quotes)">
+        Get Quote
+    </button>
+
+    <!-- <a href="#" class="classname">CSS</a> -->
+    <!-- <p>Click to get a quote!</p> -->
+</div>
+<img src="media/tolkien.jpg" alt="J.R.R Tolkien">
+<p></p>
+<footer>Footer goes here</footer>
+
+<script>
+"use strict";
+let quotes = ["Not all those who wander are lost.","The wise speak only of what they know.","A single dream is more powerful than a thousand realities.","Faithless is he that says farewell when the road darkens.","It does not do to leave a live dragon out of your calculations, if you live near him."];
+// let quoteChange = function(quote){
+//     return quote;
+// }
+let p = document.querySelector("p");
+let button = document.querySelector("button");
+let maxArrayLength = quotes.length;
+let randoCalrissian = 0;
+
+function changedQuote(quotes){
+randoCalrissian = Math.floor(Math.random() *Math.floor(maxArrayLength));
+p.innerHTML = quotes[randoCalrissian];
+}
+//let p = document.querySelector("p:nth-of-type(1)");
+
+// p.onclick = function changedQuote(e){
+    
+//     this.innerHTML = quotes[randoCalrissian];
+// }
+
+//only the things that change will be using javascript. things that remain the same will not use JavaScript.
+let footer = document.querySelector("footer");
+footer.innerHTML = "&copy 2020 Liam Andres";
+</script>
+</body>
+</html>

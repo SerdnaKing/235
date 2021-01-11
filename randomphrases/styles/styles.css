@@ -1,0 +1,47 @@
+/*Button CSS*/
+.classname {
+	background-color:#44c767;
+	-webkit-border-top-left-radius:28px;
+	-moz-border-radius-topleft:28px;
+	border-top-left-radius:28px;
+	-webkit-border-top-right-radius:28px;
+	-moz-border-radius-topright:28px;
+	border-top-right-radius:28px;
+	-webkit-border-bottom-right-radius:28px;
+	-moz-border-radius-bottomright:28px;
+	border-bottom-right-radius:28px;
+	-webkit-border-bottom-left-radius:28px;
+	-moz-border-radius-bottomleft:28px;
+	border-bottom-left-radius:28px;
+text-indent:0;
+	border:1px solid #18ab29;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+height:50px;
+	line-height:50px;
+width:140px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #2f6627;
+}.classname:hover {
+	background-color:#5cbf2a;
+}.classname:active {
+	position:relative;
+	top:1px;
+}
+/* *{float:center;justify-content: center;} */
+img{
+	min-width: 20vw;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+html{background-image: url(../media/lotr.jpg);background-repeat:no-repeat center;color: rgb(31, 192, 241)}
+body{margin: center;}
+h1, p,footer{text-align: center;}
+p{font-size:2em;font-weight:bold;}
+#quoteSwitch{display: flex;justify-content: center;}
