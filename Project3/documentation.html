@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation 3</title>
+    <link rel="stylesheet" href="css/documentation.css">
+</head>
+<body>
+    <div id="textArea">
+        <h1><a href="game.html">TAKE ME BACK TO THE GAME!</a></h1>
+        <h1>PROPOSAL</h1>
+        <p> GAME CONCEPT: The game is a simplistic but challenging one; the goal is to click on the circles that appear in the game field each successful click rewarding a point to the player. This will be a task that grows more challenging as you progress by means of a timer, the targets moving after a certain point, and a steadily increasing number of circles. The goal is to get as many points as possible by the end of the run, that being when the player runs out of time.</p>
+    <p>GENRE: Arcade style game</p>
+    <p>PLATFORM: Desktop only (requires a mouse)</p>
+    <p>STORY: This game is purely abstract</p>
+    <p>AESTHETICS: Aiming for a simple geometric/pixelated point and click game with small chipper sound effects and simple but pleasing visuals</p>
+    <p>MOCKUPS:</p>
+    <img class="photo" src="media/mockUp1.jpg" alt="Mockup Image">
+    <img class="photo" src="media/mockUp2.jpg" alt="Mockup Image">
+    
+    <p>ABOUT THE DEV: I am a second year Game Design and Development student at RIT, also seeking a minor in Digital Literature and Comparative Media. My skillsets are developing as we speak and include HTML, CSS, JavaScript, C#, and a number of Editing platforms like Photoshop. Interests of mine include Dungeons and Dragons, where I run a home made game with my closest friends (This game really brings out my most creative side).</p>
+        
+        <h1>DOCUMENTATION</h1>
+        <h2>My goal with this project</h2>
+        <p>The goal I had set out to achieve was: to make an accuracy themed game where you earn points based on how many targets you click in one minutes time. The audience I was thinking of was anyone who wanted to work on accurate point and click muscle memory in video games and have it be in a fun game format. I would like to make it simplistic but enjoyable, with more functionality than what was in my previous project.</p>
+
+        <h2>MEETING THE REQUIREMENTS</h2>
+        <p>To meet the requirements of the project I will revamp the screens to resemble a more finished product with a separate idea than that of the baseline code. I will strip the code of all that will no longer be needed and build from there. I will add audio sources for click events, level change, and overall background music. The game will have more and new object behaviors for different kinds of targets.</p>
+
+        <h2>UPDATES DURING DEVELOPMENT</h2>
+        <p>Integration of the timer has provided multiple challenges in making it work as intended. (The intended funcitonality is to display the current time remaining and have it match when the game is over while also being updated). After much review, the delta time functionality of my PIXIJS game was made a global variable to reduce scope conflicts, and allowing me to better adjust time based events for the game and timing out the game over screen. </p>
+        <br>
+        <p>Added a self made background image for the game stage and found an amazing royalty free background song, all credit of the music goes to <a href="https://www.fesliyanstudios.com/royalty-free-music/download/8-bit-retro-funk/883">Fesliyan Studios. </a></p>
+        <br>
+        <p>Crit Group suggestions that have been implemented:</p>
+        <ul>
+            <li> Power Up giving the player more time (Three clock images on the bottom left that reset the timer to one minute and also resetting the time based events</li>
+            <li>No Visible mouse clicker icon (making only the crosshair visible) when hovering over a target to click on)</li>
+            <li>changed a targets color from red to purple as red was not an inviting color choice for something meant to be clicked</li>
+            <li>Add working high score funcitonality</li>
+        </ul>
+
+        <h2>POST CRIT SUGGESTIONS UPDATES</h2>
+        <p>The high score functionality works as intended, but the time increase power up presented troubles. The addition of a timer changing element meant I needed to readjust the existing timer to work with and not against the powerup.</p>
+
+        <h2>SOURCES</h2>
+        <p>the song used in Target Practice was made by Fesliyan Studios and the direct link to the song is here: <a href="https://www.fesliyanstudios.com/royalty-free-music/download/8-bit-retro-funk/883">8-bit-retro-funk</a> Please note that the music is free to use with exceptions, all of which can be found here: <a href="https://www.fesliyanstudios.com/policy">Use of Fesliyan Music</a></p>
+    </div>
+
+    
+</body>
+</html>

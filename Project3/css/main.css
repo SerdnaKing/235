@@ -1,0 +1,205 @@
+/*this gets rid of the ugly white space :)*/
+body{
+    background-color: #3f3f3e;
+}
+/*Universal styles*/
+a:link{
+color: #8BBEB2;
+}
+a:visited{
+color: #E6F9AF;
+}
+a:hover{
+color: #18314f;
+/* background-color: #8f91a2; */
+}
+a:active{
+color: purple;
+}
+a:focus{
+color: #384e77;
+}
+
+/*area specific styles*/
+.wrapper{
+    font-family: Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  auto auto auto;
+    grid-template-areas: " leftInfo gameView   rightInfo"
+                         "  leftInfo gameView  rightInfo"
+                           "  leftInfo bottomInfo rightInfo "; 
+}
+
+#gameView{
+    grid-area:gameView;
+    display: flex;
+    cursor: url("../images/crosshair.png") 8 8,crosshair;
+}
+
+#bottomInfo{
+    display: block;
+    /* float: left; */
+    grid-area:bottomInfo;
+   margin: 0 auto;
+    background-color: #3f3f3e;
+    color: #94b0da;
+    font-family: Lucida Console, Courier, monospace;
+    font-size: 15px;
+    
+}
+#leftInfo{
+ grid-area:leftInfo;
+ background-color: #8f91a2;
+ color: #dcedff;
+font-size: large;
+margin: 0 auto;
+max-width: 70%; 
+max-height: 80%;
+}
+#rightInfo{
+    grid-area:rightInfo;
+    background-color: #8f91a2;
+    color: #dcedff;
+   font-size: large;
+   margin: 0 auto;
+   max-height: 80%;
+   max-width: 70%; 
+}
+#leftInfo >ul.menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding:0;
+    justify-content: center;
+    align-content: center;
+    padding-top: 50px;
+    justify-content: space-around;
+
+}
+#rightInfo >ul.menu a{
+    display: block;
+    
+    padding: 40px;
+     
+}
+#rightInfo >ul.menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding:0;
+    justify-content: center;
+    align-content: center;
+    padding-top: 50px;
+    justify-content: space-around;
+
+}
+#leftInfo >ul.menu a{
+    display: block;
+    
+    padding: 40px;
+     
+}
+.menu a:hover{
+    transform: scale(1.2);
+}
+
+#bottomInfo{
+grid-area:bottomInfo;
+display: flex;
+float: left;
+background-color: #3f3f3e;
+color: #94b0da;
+margin: 0 auto;
+font-family: Lucida Console, Courier, monospace;
+font-size: 19px;
+}
+
+@media screen and (max-width: 1700px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows:   auto auto auto auto ;
+        grid-template-areas: " rightInfo    "
+                             "gameView  "
+                             "bottomInfo"
+                                "leftInfo";
+    }
+  
+#gameView{
+    grid-area:gameView;
+    margin: 0 auto;
+    display: flex;
+    cursor: url("../images/crosshair.png") 8 8,crosshair;
+}
+
+#bottomInfo{
+    display: block;
+    grid-area:bottomInfo;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #3f3f3e;
+    color: #94b0da;
+    font-family: Lucida Console, Courier, monospace;
+    font-size: 18px;
+    max-width: 60%;
+    min-width: 50%;
+}
+#leftInfo{
+ grid-area:leftInfo;
+ background-color: #8f91a2;
+ color: #dcedff;
+font-size: large;
+margin: 0 auto;
+max-width: 70%; 
+padding: 1rem;
+}
+#rightInfo{
+    grid-area:rightInfo;
+    background-color: #8f91a2;
+    color: #dcedff;
+   font-size: large;
+   margin: 0 auto;
+}
+#leftInfo >ul.menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding:0;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-around;
+
+}
+#rightInfo >ul.menu a{
+    display: block;
+    
+    padding: 40px;
+     
+}
+#rightInfo >ul.menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding:0;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-around;
+
+}
+#leftInfo >ul.menu a{
+    display: block;
+    
+    padding: 40px;
+  
+     
+}
+}

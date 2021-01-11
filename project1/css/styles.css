@@ -1,0 +1,240 @@
+
+    html{
+        background-color: #393d3f;
+    }
+    
+    #wrapper{
+        font-size: 15pt;
+        color: #DCD6F7;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        margin: 5% 5%;
+        background-color:#4e4c67;
+        
+        display: grid;
+        grid-template-rows: auto auto auto auto;/*omit 3rd row unless navbar is included in the grid*/
+        grid-template-columns: auto ;
+        grid-template-areas:"navbar" 
+                            "header  "
+                             "main  "
+                             "footer  ";
+    
+        font-family: Candara, Verdana, Geneva, Tahoma, sans-serif;
+    }
+    /*Universal styles*/
+    a:link{
+        color: #a6b1e1;
+        background-color: #444553;
+    }
+    a:visited{
+        color: #b4869f;
+    }
+    a:hover{
+        color: #DCD6F7;
+    }
+    a:active{
+        color: #985f6f;
+    }
+    a:focus{
+        color: #a6b1e1;
+    }
+
+    #header{
+
+        padding-right: 3rem;
+        padding-left: 6rem;
+    }
+    #title{
+        /* display: flex; */
+        float: left;
+        max-width: 50%;
+        text-align: center;
+    }
+    #title> img{
+        width: 15%;
+         min-width: 20vw; 
+         /* max-width: 2; */
+        /* min-width: 100%; */
+        margin: 2rem;
+    }
+    #work1,#work2{
+        text-align: center;
+    } 
+    #aboutMe{
+        margin-top: 3vw;
+        float: right;
+        max-width: 50%;
+        /* text-align: center; */
+    }
+    #aboutMe > h2{
+        /* padding-left: 6%; */
+        text-align: center;
+    }
+   #header p{
+       padding: 2rem 
+   }
+   #header >img{
+        max-width: 25vw;
+        min-width: 13rem;
+        top: auto;
+        /* text-align: right; */
+        /* justify-content: right; */
+    }
+   
+    #navbar{
+       
+      background-color: #444553 ;
+    }
+    #navbar >ul.menu{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        list-style: none;
+        margin: 0;
+        padding:0;
+        justify-content: center;
+        align-content: center;
+        justify-content: space-around;
+    
+    }
+    #navbar >ul.menu a{
+        display: block;
+        padding: 10px;
+         
+    }
+    .menu a:hover{
+        transform: scale(1.1);
+    }
+
+    hr{
+        color: #a6b1e1;
+        border-style: double;
+        border-width: 1vw;
+       width: 80%;
+    }
+    #main{
+        margin:0 auto; /*floats contents to the center*/
+        display: flex;
+        flex-direction: column;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    img{
+        width: 15%;
+        /* min-width: 20vw; */
+        min-width: 100%;
+        margin: 2rem;
+        
+    }
+    
+    #main > .works{
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom:10rem;
+    }
+
+    #main > .works > .subheading {
+        display: flex;
+        line-height: 1.5rem;
+        padding:0.3rem;   
+        padding-left: 2rem;
+        padding-right: 2rem;
+        background-color:#686868;     
+        margin-top: 2rem;
+        width: 50%;
+        float: right;
+        /* max-width: 100%; */
+        min-width: 50%; 
+    }
+       .works>.image{
+        width: 40%; 
+        display: flex;
+        float: left;
+        /* margin: 0 auto; */
+        text-align: center;
+    }
+    #footer> #footerBottom >embed{
+        width: 100%;
+        height: 600px;
+    }
+   #footer > #footerTop{
+       margin-left: 50px;
+   }
+
+@media screen and (max-width: 900px){
+    #wrapper{
+        display: grid;
+        grid-template-rows: auto auto auto; /*omit 3rd row unless navbar is included in the grid*/
+        grid-template-columns: auto;
+        grid-template-areas: "header"
+                             "main"
+                             "footer";
+
+        font-family: Candara, Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #4e4c67; /*remove this once done testing the different viewports*/
+    }
+
+     #header{
+         margin: 0 auto;
+         /* text-align: center; */
+        /* justify-items: center; */
+        /* align-items: center; */
+       
+    } 
+    #title{
+        max-width: 100%;
+        text-align: center;
+        float: center;
+    }
+    #title >img{
+        max-width: 70%;
+         width: 200%; 
+        /* max-width: 100%; */
+    }
+    #aboutMe{
+        max-width: 100%;
+        float: center;
+    }
+ #main{
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+ }
+  
+    #main > .works{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom:10rem;
+    }
+    .works > .image{
+        width: 60%;
+    }
+    #main > .works> .subheading{
+        margin: 0 auto;
+    }
+    #main > .works > .image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #main>.works>.subheading>p{
+        
+        width:100%;
+        text-align: center;
+    }
+    #footer{
+        /* display: flex; */
+        
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+
+    
+}

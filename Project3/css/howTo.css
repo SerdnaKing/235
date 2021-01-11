@@ -1,0 +1,33 @@
+body{
+    background-color: #3f3f3e;
+}
+/*Universal styles*/
+a:link{
+color: #8BBEB2;
+}
+a:visited{
+color: #E6F9AF;
+}
+a:hover{
+color: #18314f;
+}
+a:active{
+color: purple;
+}
+a:focus{
+color: #384e77;
+}
+.wrapper{
+       background-color:#8f91a2 ;
+       margin: 0 auto;
+       font-family: 'Grandstander', monospace;
+       border: 4px dotted #0e4749;
+       text-align: center;
+       color: #dcedff;
+
+
+}
+p{
+ font-size: 19px
+ 
+}

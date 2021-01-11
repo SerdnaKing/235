@@ -1,0 +1,50 @@
+
+a:link{
+    color: #FEDC97;
+}
+a:visited{
+    color: pink;
+}
+a:hover{
+    color:#033f63 ;
+  background-color: #7c9885;
+}
+a:active{
+    color: maroon;
+}
+a:focus{
+    color: #FEDC97;
+}
+html{
+    /* background-color: #033F63; */
+    background-image:url(../media/animeCharacters.jpg) ;
+    
+}
+a{
+    padding-left: 2rem;
+    padding-top: 0.001%;
+}
+
+header> h1, p{
+    padding-left: 2rem;
+    padding-top: 0.001%;
+}
+.widgets, .dropdownFavorites, .dropbtn{
+    margin-left: 2rem;
+    padding-top: 0.001%;
+}
+
+h2{
+    padding-left: 2rem;
+    padding-top: 0.001%;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:#28666E;
+   
+}
+
+
+
+
